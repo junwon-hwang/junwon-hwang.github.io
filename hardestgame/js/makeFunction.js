@@ -11,14 +11,14 @@ import { $redBox, $game, $clear, $eatCircle1, $clearY } from './getDom.js';
 export function clear() {
   if (
     window.location.href ===
-    "http://127.0.0.1:5500/hardestgame/html/yunjong.html"
+    "../html/yunjong.html"
   ) {
     let $redBoxCoor = $redBox.getBoundingClientRect();
     let $redBoxXCoor = Math.floor($redBoxCoor.x);
     let $redBoxYCoor = Math.floor($redBoxCoor.y)
     if ($redBoxXCoor > $clear - 23 || $redBoxYCoor > $clearY) {
       $game.innerHTML = "";
-      window.location.href = "http://127.0.0.1:5500/hardestgame/html/subPage3.html";
+      window.location.href = "../html/subPage3.html";
       return;
     }
   } else {
@@ -31,7 +31,7 @@ export function clear() {
 
       $game.innerHTML = "";
       window.location.href =
-        "http://127.0.0.1:5500/hardestgame/html/subPage.html";
+        "../html/subPage.html";
 
       return;
     }
