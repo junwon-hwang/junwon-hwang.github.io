@@ -11,14 +11,14 @@ import { $redBox, $game, $clear, $eatCircle1, $clearY } from './getDom.js';
 export function clear() {
   if (
     window.location.href ===
-    "../html/yunjong.html"
+    "https://junwon-hwang.github.io/hardestgame/html/yunjong.html"
   ) {
     let $redBoxCoor = $redBox.getBoundingClientRect();
     let $redBoxXCoor = Math.floor($redBoxCoor.x);
     let $redBoxYCoor = Math.floor($redBoxCoor.y)
     if ($redBoxXCoor > $clear - 23 || $redBoxYCoor > $clearY) {
       $game.innerHTML = "";
-      window.location.href = "../html/subPage3.html";
+      window.location.href = "https://junwon-hwang.github.io/hardestgame/html/subPage3.html";
       return;
     }
   } else {
