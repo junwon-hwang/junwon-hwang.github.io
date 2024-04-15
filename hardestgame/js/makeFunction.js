@@ -18,7 +18,7 @@ export function clear() {
     let $redBoxYCoor = Math.floor($redBoxCoor.y)
     if ($redBoxXCoor > $clear - 23 || $redBoxYCoor > $clearY) {
       $game.innerHTML = "";
-      window.location.href = "./html/subPage3.html";
+      window.location.href = "/hardestgame/html/subPage3.html";
       return;
     }
   } else {
